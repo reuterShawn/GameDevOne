@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 33516951}
   - component: {fileID: 33516953}
   - component: {fileID: 33516952}
-  - component: {fileID: 33516954}
   m_Layer: 5
   m_Name: CreditsUI
   m_TagString: Untagged
@@ -201,23 +200,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33516950}
   m_CullTransparentMesh: 1
---- !u!114 &33516954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33516950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 264fdf646f940ad4d8a5c7986cc886b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startButton: {fileID: 76449361}
-  openCreditsButton: {fileID: 787259842}
-  closeCreditsButton: {fileID: 1502381463}
-  creditsUI: {fileID: 239207285}
-  mainScreen: {fileID: 239207285}
 --- !u!1 &76449359
 GameObject:
   m_ObjectHideFlags: 0
@@ -348,7 +330,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 239207286}
-  - component: {fileID: 239207287}
   m_Layer: 5
   m_Name: MainScreen
   m_TagString: Untagged
@@ -378,23 +359,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &239207287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239207285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 264fdf646f940ad4d8a5c7986cc886b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startButton: {fileID: 76449361}
-  openCreditsButton: {fileID: 787259842}
-  closeCreditsButton: {fileID: 1502381463}
-  creditsUI: {fileID: 33516950}
-  mainScreen: {fileID: 239207285}
 --- !u!1 &477399618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,7 +1176,6 @@ GameObject:
   - component: {fileID: 1222536726}
   - component: {fileID: 1222536728}
   - component: {fileID: 1222536727}
-  - component: {fileID: 1222536729}
   m_Layer: 5
   m_Name: background
   m_TagString: Untagged
@@ -1279,23 +1242,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222536725}
   m_CullTransparentMesh: 1
---- !u!114 &1222536729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222536725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 264fdf646f940ad4d8a5c7986cc886b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startButton: {fileID: 76449361}
-  openCreditsButton: {fileID: 787259842}
-  closeCreditsButton: {fileID: 1502381463}
-  creditsUI: {fileID: 33516950}
-  mainScreen: {fileID: 239207285}
 --- !u!1 &1235386180
 GameObject:
   m_ObjectHideFlags: 0
