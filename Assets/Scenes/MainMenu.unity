@@ -151,12 +151,12 @@ RectTransform:
   m_GameObject: {fileID: 33516950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.4999995, y: 6.4999995, z: 1}
+  m_LocalScale: {x: 6.499999, y: 6.499999, z: 1}
   m_Children:
   - {fileID: 776134587}
   - {fileID: 1502381461}
   m_Father: {fileID: 1222536726}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -216,7 +216,8 @@ MonoBehaviour:
   startButton: {fileID: 76449361}
   openCreditsButton: {fileID: 787259842}
   closeCreditsButton: {fileID: 1502381463}
-  creditsUI: {fileID: 33516950}
+  creditsUI: {fileID: 239207285}
+  mainScreen: {fileID: 239207285}
 --- !u!1 &76449359
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,12 +244,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76449359}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 560624823}
-  m_Father: {fileID: 1222536726}
+  m_Father: {fileID: 239207286}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -338,6 +339,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76449359}
   m_CullTransparentMesh: 1
+--- !u!1 &239207285
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 239207286}
+  - component: {fileID: 239207287}
+  m_Layer: 5
+  m_Name: MainScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &239207286
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239207285}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1235386181}
+  - {fileID: 76449360}
+  - {fileID: 787259841}
+  m_Father: {fileID: 1222536726}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &239207287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239207285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264fdf646f940ad4d8a5c7986cc886b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startButton: {fileID: 76449361}
+  openCreditsButton: {fileID: 787259842}
+  closeCreditsButton: {fileID: 1502381463}
+  creditsUI: {fileID: 33516950}
+  mainScreen: {fileID: 239207285}
 --- !u!1 &477399618
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,12 +889,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787259840}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 477399619}
-  m_Father: {fileID: 1222536726}
+  m_Father: {fileID: 239207286}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1155,6 +1212,7 @@ GameObject:
   - component: {fileID: 1222536726}
   - component: {fileID: 1222536728}
   - component: {fileID: 1222536727}
+  - component: {fileID: 1222536729}
   m_Layer: 5
   m_Name: background
   m_TagString: Untagged
@@ -1173,9 +1231,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1235386181}
-  - {fileID: 76449360}
-  - {fileID: 787259841}
+  - {fileID: 239207286}
   - {fileID: 33516951}
   m_Father: {fileID: 1691969785}
   m_RootOrder: 0
@@ -1223,6 +1279,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222536725}
   m_CullTransparentMesh: 1
+--- !u!114 &1222536729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222536725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264fdf646f940ad4d8a5c7986cc886b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startButton: {fileID: 76449361}
+  openCreditsButton: {fileID: 787259842}
+  closeCreditsButton: {fileID: 1502381463}
+  creditsUI: {fileID: 33516950}
+  mainScreen: {fileID: 239207285}
 --- !u!1 &1235386180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,16 +1321,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235386180}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1222536726}
+  m_Father: {fileID: 239207286}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0, y: 251.77777}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1235386182
@@ -1583,6 +1656,7 @@ GameObject:
   - component: {fileID: 1691969784}
   - component: {fileID: 1691969783}
   - component: {fileID: 1691969782}
+  - component: {fileID: 1691969786}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1671,3 +1745,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1691969786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691969781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264fdf646f940ad4d8a5c7986cc886b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startButton: {fileID: 76449361}
+  openCreditsButton: {fileID: 787259842}
+  closeCreditsButton: {fileID: 1502381463}
+  creditsUI: {fileID: 33516950}
+  mainScreen: {fileID: 239207285}
