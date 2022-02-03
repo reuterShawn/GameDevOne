@@ -15,8 +15,7 @@ public class MainMenuManager : MonoBehaviour
     void Start()
     {
         creditsUI.SetActive(false);
-        mainScreen.SetActive(true);
-
+        
         startButton.onClick.AddListener(() => LoadingScreen.LoadScene("GameScene1"));
 
         openCreditsButton.onClick.AddListener(() => {creditsUI.SetActive(true); 
