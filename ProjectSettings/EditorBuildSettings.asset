@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene1.unity
     guid: bff1419a8f4a2da6aba0c06dd68541b4
+  - enabled: 1
+    path: Assets/Scenes/NotQuitePlatformer.unity
+    guid: 1a09ef670c2aab04db72a1a265c667e6
   m_configObjects: {}
