@@ -29,5 +29,9 @@ public class PlayerController : MonoBehaviour
             mainSpriteRenderer.flipX = false;
         }
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            mainRigidBody.AddForce(new Vector2(0, 200));
+        }
     }
 }
