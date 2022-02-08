@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
-            mainRigidBody.AddForce(new Vector2(0, 200));
+            mainRigidBody.AddForce(new Vector2(0, 400));
         }
     }
 }
