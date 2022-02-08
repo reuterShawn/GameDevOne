@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
             mainSpriteRenderer.flipX = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space))
         {
             mainRigidBody.AddForce(new Vector2(0, 200));
         }
