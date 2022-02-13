@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ObjectSpawner : MonoBehaviour
 {
-    [SerializeField] private Transform spawnlocation;
+    [SerializeField] private Transform spawnLocation;
     [SerializeField] private SpawnObject objectPrefab;
     // Start is called before the first frame update
     void Start()

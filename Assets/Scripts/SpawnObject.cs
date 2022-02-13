@@ -19,6 +19,6 @@ public class SpawnObject : MonoBehaviour
 
     public void SetColor(Color colorObject)
     {
-
+        meshRenderer.material.SetColor("_Color", colorObject);
     }
 }
