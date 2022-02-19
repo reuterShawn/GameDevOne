@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -599,9 +599,10 @@ GameObject:
   - component: {fileID: 2128312765}
   - component: {fileID: 2128312764}
   - component: {fileID: 2128312768}
+  - component: {fileID: 2128312769}
   m_Layer: 0
-  m_Name: Ball
-  m_TagString: Untagged
+  m_Name: ball
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -732,6 +733,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainRigidbody: {fileID: 2128312764}
   startSpeed: 5
+--- !u!114 &2128312769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128312763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b210a0ef3983f40a1b64e0b7746b60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HandleP1Score: 0
+  HandleP2Score: 0
 --- !u!1001 &4506484211256616951
 PrefabInstance:
   m_ObjectHideFlags: 0
