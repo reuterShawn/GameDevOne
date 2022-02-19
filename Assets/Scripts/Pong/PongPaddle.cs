@@ -19,12 +19,12 @@ public class PongPaddle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.upKey))
+        if (Input.GetKey(upKey))
         {
-            mainTransform.position += mainTransform.up * moveSpeed * time.deltaTime;
+            mainTransform.position += mainTransform.up * moveSpeed;
 
-        } else if (Input.GetKey(KeyCode.downKey)) {
-            mainTransform.position += mainTransform.down * moveSpeed * time.deltaTime;
+        } else if (Input.GetKey(downKey)) {
+            mainTransform.position += mainTransform.up * moveSpeed;
 
         }
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4506484212221693302, guid: 0998cc0b58a10d04a82e25a0eb869bcd, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4506484212221693302, guid: 0998cc0b58a10d04a82e25a0eb869bcd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -211,6 +211,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upKey: 273
   downKey: 274
+  mainTransform: {fileID: 194639442}
+  moveSpeed: 5
+--- !u!4 &194639442 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4506484212221693302, guid: 0998cc0b58a10d04a82e25a0eb869bcd, type: 3}
+  m_PrefabInstance: {fileID: 194639437}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &484507438
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7278071616652847539, guid: 3865f6b0992d3e24cbb29874ef1ed4f2, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7278071616652847539, guid: 3865f6b0992d3e24cbb29874ef1ed4f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -511,7 +518,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &2128312763
 GameObject:
@@ -642,7 +649,7 @@ Transform:
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4506484211256616951
 PrefabInstance:
@@ -653,7 +660,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4506484212221693302, guid: 0998cc0b58a10d04a82e25a0eb869bcd, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4506484212221693302, guid: 0998cc0b58a10d04a82e25a0eb869bcd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -720,6 +727,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upKey: 119
   downKey: 115
+  mainTransform: {fileID: 4506484211256616956}
+  moveSpeed: 0.1
+--- !u!4 &4506484211256616956 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4506484212221693302, guid: 0998cc0b58a10d04a82e25a0eb869bcd, type: 3}
+  m_PrefabInstance: {fileID: 4506484211256616951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4749039011227426516
 PrefabInstance:
   m_ObjectHideFlags: 0
