@@ -24,7 +24,7 @@ public class PongPaddle : MonoBehaviour
             mainTransform.position += mainTransform.up * moveSpeed;
 
         } else if (Input.GetKey(downKey)) {
-            mainTransform.position += mainTransform.up * moveSpeed;
+            mainTransform.position += mainTransform.up * -moveSpeed;
 
         }
     }
