@@ -26,10 +26,8 @@ public class PongPaddle : MonoBehaviour
         
         if (Input.GetKey(upKey) && posY > minY - moveSpeed && posY < maxY){
             mainTransform.Translate(0, moveSpeed, 0);
-            Debug.Log(mainTransform.position.y);
         } if (Input.GetKey(downKey) && posY > minY && posY < maxY + moveSpeed) {
             mainTransform.Translate(0, -moveSpeed, 0);
-            Debug.Log(mainTransform.position.y);
         }
     }
 }
