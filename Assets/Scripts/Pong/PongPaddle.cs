@@ -9,6 +9,7 @@ public class PongPaddle : MonoBehaviour
 
     [SerializeField] private Transform mainTransform;
     [SerializeField] private float moveSpeed;
+    private float position = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -19,13 +20,16 @@ public class PongPaddle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(upKey))
-        {
-            mainTransform.position += mainTransform.up * moveSpeed;
-
-        } else if (Input.GetKey(downKey)) {
-            mainTransform.position += mainTransform.up * -moveSpeed;
-
+        float minY = 0;
+        float maxY = 4;
+        float posY = mainTransform.position.y;
+        
+        if (Input.GetKey(upKey) && posY > minY - moveSpeed && posY < maxY){
+            mainTransform.Translate(0, moveSpeed, 0);
+            Debug.Log(mainTransform.position.y);
+        } if (Input.GetKey(downKey) && posY > minY && posY < maxY + moveSpeed) {
+            mainTransform.Translate(0, -moveSpeed, 0);
+            Debug.Log(mainTransform.position.y);
         }
     }
 }
