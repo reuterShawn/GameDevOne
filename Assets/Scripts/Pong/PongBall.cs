@@ -15,8 +15,8 @@ public class PongBall : MonoBehaviour
 
     public void Restart()
     {
-        mainRigidbody.position = Vector2.zero;
-        mainRigidbody.velocity = Vector2.zero;
+        mainRigidbody.position = new Vector2(0.0f, 2.0f);
+        mainRigidbody.velocity = new Vector2(0.0f, 2.0f);
         StartCoroutine(randomPosition());
     }
 
@@ -33,29 +33,3 @@ public class PongBall : MonoBehaviour
     }
 }
 
-
-// // We had issues calling the coroutine from a static method.
-// // While not ideal, for now we worked around this using
-// // https://forum.unity.com/threads/c-coroutines-in-static-functions.134546/
-// public class runCoroutine : MonoBehaviour 
-// {
-//     [SerializeField] private static Rigidbody2D mainRigidbody;
-//     [SerializeField] private float startSpeed;
-
-//     static public runCoroutine coroutine;
-    
-//     void Awake()
-//     {
-//     coroutine = this;
-//     }
-    
-//     IEnumerator doCoroutine() {
-//         yield return new WaitForSeconds(1);
-//         Vector2 newVelocity = new Vector2(Random.Range(0f, 5f), Random.Range(0f, 1f));
-//         mainRigidbody.velocity = newVelocity.normalized * startSpeed;
-//     }
-    
-//     static public void randomDirection() {
-//         coroutine.StartCoroutine("doCoroutine");
-//     }
-// }
