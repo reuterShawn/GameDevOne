@@ -14,24 +14,29 @@ public class PongManager : MonoBehaviour
     private int leftScore = 0;
     private int winningScore = 3;
 
+
    private void Awake() {
        LeftPongGoal.onScore += HandleP1Score;
        RightPongGoal.onScore += HandleP2Score;
    }
 
-   private void HandleP2Score(){
+   private void HandleP2Score() {
+       PongBall ball = gameObject.GetComponent<PongBall>();
        rightScore++;
        if (rightScore == winningScore) {
-           PongBall.Restart();
+
        }
        rightText.text = "" + rightScore;
+       ball.Restart();
    }
 
     private void HandleP1Score() { 
+       PongBall ball = gameObject.GetComponent<PongBall>();
        leftScore++;
        if (leftScore == winningScore) {
-            PongBall.Restart();
+            
        }
        leftText.text = "" + leftScore;
+       ball.Restart();
    }
 }
