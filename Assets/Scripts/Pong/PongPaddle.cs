@@ -9,7 +9,6 @@ public class PongPaddle : MonoBehaviour
 
     [SerializeField] private Transform mainTransform;
     [SerializeField] private float moveSpeed;
-    private float position = 0;
 
     // Start is called before the first frame update
     void Start()

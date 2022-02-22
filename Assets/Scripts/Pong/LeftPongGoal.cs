@@ -12,7 +12,6 @@ public class LeftPongGoal: MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Ball")) {
             onScore?.Invoke();
-            Debug.Log("Something is happening");
         }
     }
 
