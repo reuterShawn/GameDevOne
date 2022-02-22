@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -550,11 +550,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 848763078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef65c744bee0c174da574478e94aa362, type: 3}
+  m_Script: {fileID: 11500000, guid: 78d21aaccba71b5b48d08ce006cdcad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1Goal: {fileID: 0}
-  p2Goal: {fileID: 0}
 --- !u!1 &1112023331
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,11 +701,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1202093054}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef65c744bee0c174da574478e94aa362, type: 3}
+  m_Script: {fileID: 11500000, guid: 74102aee5b2e8f0d387741e9db7f015d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1Goal: {fileID: 0}
-  p2Goal: {fileID: 0}
 --- !u!1001 &1374986414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1238,8 +1234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b210a0ef3983f40a1b64e0b7746b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandleP1Score: 0
-  HandleP2Score: 0
 --- !u!1001 &4506484211256616951
 PrefabInstance:
   m_ObjectHideFlags: 0
