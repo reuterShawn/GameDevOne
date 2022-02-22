@@ -17,7 +17,7 @@ public class PongManager : MonoBehaviour
    private void Awake() {
        LeftPongGoal.onScore += HandleP1Score;
        RightPongGoal.onScore += HandleP2Score;
-       // PongBall.Restart();
+       PongBall.Restart();
    }
 
    void HandleP2Score(){
