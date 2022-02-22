@@ -17,25 +17,21 @@ public class PongManager : MonoBehaviour
    private void Awake() {
        LeftPongGoal.onScore += HandleP1Score;
        RightPongGoal.onScore += HandleP2Score;
-       PongBall.Restart();
    }
 
-   void HandleP2Score(){
-       
+   private void HandleP2Score(){
        rightScore++;
-       if (rightScore == winningScore){
-           StartCoroutine(youWin(true));
+       if (rightScore == winningScore) {
+           PongBall.Restart();
        }
        rightText.text = "" + rightScore;
-       ball.Restart;
    }
 
-    void HandleP1Score() { 
+    private void HandleP1Score() { 
        leftScore++;
-       if (leftScore == winningScore){
-           StartCoroutine(youWin(true));
+       if (leftScore == winningScore) {
+            PongBall.Restart();
        }
        leftText.text = "" + leftScore;
-       ball.Restart;
    }
 }

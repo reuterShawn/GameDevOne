@@ -10,7 +10,8 @@ public class PongBall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Vector2 newVelocity = new Vector2(Random.Range(0f, 5f), Random.Range(0f, 1f));
+        mainRigidbody.velocity = newVelocity.normalized * startSpeed;
     }
 
     public void Restart()
@@ -23,7 +24,7 @@ public class PongBall : MonoBehaviour
     IEnumerator randomDirection() {
         Vector2 newVelocity = new Vector2(Random.Range(0f, 5f), Random.Range(0f, 1f));
         mainRigidbody.velocity = newVelocity.normalized * startSpeed;
-        yield return null;
+        yield return new WaitForSeconds(4);
     }
 
     // Update is called once per frame
