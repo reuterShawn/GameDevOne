@@ -22,6 +22,12 @@ public class PongManager : MonoBehaviour
         RightPongGoal.onScore += HandleP2Score;
     }
 
+    void OnDestroy()
+    {
+        LeftPongGoal.onScore -= HandleP1Score;
+        RightPongGoal.onScore -= HandleP2Score;
+    }
+
     private void HandleP2Score()
     {
         if (rightScore == winningScore)
