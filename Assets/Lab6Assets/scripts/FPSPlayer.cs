@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class FPSPlayer : MonoBehaviour
 {
     // Start is called before the first frame update
 
@@ -12,6 +12,8 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] private AudioSource shootSound;
     [SerializeField] private FPSUI fpsUI;
     [SerializeField] private int maxHealth;
+
+    public static FPSPlayer instance;
 
     private float lastHitTime;
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -31,6 +33,7 @@ public class NewBehaviourScript : MonoBehaviour
     private int Health
     {
         get
+
         {
             return health;
         }
@@ -80,5 +83,11 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
 
+    }
+
+    void Awake()
+    {
+        instance = this;
+        Health = maxHealth;
     }
 }
