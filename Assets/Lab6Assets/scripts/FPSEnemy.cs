@@ -17,26 +17,6 @@ public class FPSEnemy : MonoBehaviour
         Vector3 playerPos = FPSPlayer.instance.transform.position;
         mainTransform.LookAt(playerPos);
     }
-  
-    private void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Bullet")) {
-            Destroy(gameObject);
-            Destroy(other.gameObject);
-            FPSPlayer.instance.HandleEnemyDefeat();
-        }
-    }
-
-    IEnumerator FireRoutine() {
-            float elapsedTime = 0;
-            while (elapsedTime <= moveTime) {
-                elapsedTime += Time.deltaTime;
-                mainTransform.position += mainTransform.forward * moveSpeed * Time.deltaTime;
-                yield return null;
-            }
-            Destroy(gameObject);
-        }
-
-    // Update is called once per frame
     private void Update()
     {
         secondsPerSpawn -= (0.05f * Time.deltaTime);
@@ -46,7 +26,16 @@ public class FPSEnemy : MonoBehaviour
         }
     }
 
-   private void Spawn() {
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Bullet"))
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+            FPSPlayer.instance.HandleEnemyDefeat();
+        }
+    }
+    private void Spawn() {
         GameObject enemyPrefab = enemies[Random.Range(0, enemies.Length)];
         GameObject newEnemy = Instantiate(enemyPrefab);
         newEnemy.transform.position = spawnLocation.position;

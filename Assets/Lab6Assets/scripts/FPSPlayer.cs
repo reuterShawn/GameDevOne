@@ -66,12 +66,6 @@ public class FPSPlayer : MonoBehaviour
 
         return (Vector3.Dot(posDiff.normalized, faceDirection) < 0.5f) && (distanceFromPlayer > 10f);
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -81,8 +75,6 @@ public class FPSPlayer : MonoBehaviour
             newBullet.transform.SetPositionAndRotation(shootPosition.position, shootPosition.rotation);
             shootSound.Play();
         }
-
-
     }
 
     void Awake()
