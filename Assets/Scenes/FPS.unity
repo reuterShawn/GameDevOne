@@ -365,7 +365,8 @@ MonoBehaviour:
   mainTransform: {fileID: 480132405}
   spawnLocation: {fileID: 1739387766}
   enemies:
-  - {fileID: 4608478165724612467, guid: 0ba71fdc9f3198fd5b375c9080869924, type: 3}
+  - {fileID: 4608478165724612467, guid: 52d2e0688d38051fea4d8670ca0506e9, type: 3}
+  - {fileID: 4608478165724612467, guid: 52d2e0688d38051fea4d8670ca0506e9, type: 3}
   moveSpeed: 3
   moveTime: 1
   lastSpawnTime: 0
