@@ -223,15 +223,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fae290c3d6bfd543a4e2ef1b20b011f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainTransform: {fileID: 0}
-  spawnLocation: {fileID: 0}
-  enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  mainTransform: {fileID: 3800838889440583113}
   moveSpeed: 5
-  moveTime: 2
-  lastSpawnTime: 1
-  secondsPerSpawn: 1
