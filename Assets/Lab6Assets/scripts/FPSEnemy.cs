@@ -14,11 +14,18 @@ public class FPSEnemy : MonoBehaviour
 
  void Start()
     {
+        
+    }
+     void Update()
+    {
         Vector3 playerPos = FPSPlayer.instance.transform.position;
         mainTransform.LookAt(playerPos);
-    }
-    private void Update()
-    {
+
+        Vector3 currentRotation = mainTransform.rotation.eulerAngles;
+        currentRotation.x = 0;
+        mainTransform.eulerAngles = currentRotation;
+        Vector3 directionToPlayer = (playerPos - mainTransform.position).normalized;
+        mainTransform.position += (directionToPlayer * moveSpeed * Time.deltaTime).SetY(0);
         secondsPerSpawn -= (0.05f * Time.deltaTime);
         if(Time.time - lastSpawnTime >= secondsPerSpawn && FPSPlayer.instance.ShouldSpawn(spawnLocation.position)) {
             lastSpawnTime = Time.time;
@@ -33,6 +40,7 @@ public class FPSEnemy : MonoBehaviour
             Destroy(gameObject);
             Destroy(other.gameObject);
             FPSPlayer.instance.HandleEnemyDefeat();
+            Debug.Log("Enemy Killed HandleEnemyDefeat Called");
         }
     }
     private void Spawn() {

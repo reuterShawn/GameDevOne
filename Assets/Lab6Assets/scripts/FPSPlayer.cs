@@ -54,6 +54,7 @@ public class FPSPlayer : MonoBehaviour
     {
         enemyDefeatCount++;
         fpsUI.ShowEnemyDefeatCount(enemyDefeatCount);
+        Debug.Log("Enemy Killed HandleEnemyDefeat Called" + enemyDefeatCount);
     }
 
     public bool ShouldSpawn(Vector3 pos)

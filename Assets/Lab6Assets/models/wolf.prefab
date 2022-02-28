@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3800838889440583113}
-  - component: {fileID: -7624999080957863926}
   - component: {fileID: 2489651973304584445}
   - component: {fileID: 7934407766683773453}
   - component: {fileID: -8995784403599164940}
   - component: {fileID: 5158216953252156829}
   - component: {fileID: 4379935180654178582}
+  - component: {fileID: -7897311166934916023}
   m_Layer: 0
   m_Name: wolf
   m_TagString: Enemy
@@ -36,20 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &-7624999080957863926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4608478165724612467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45dd8f3ec7f80914d945f45b5c7e6948, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meshRenderer: {fileID: 7934407766683773453}
-  audioSource: {fileID: 4379935180654178582}
 --- !u!33 &2489651973304584445
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -225,3 +211,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-7897311166934916023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4608478165724612467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fae290c3d6bfd543a4e2ef1b20b011f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainTransform: {fileID: 0}
+  spawnLocation: {fileID: 0}
+  enemies:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  moveSpeed: 5
+  moveTime: 2
+  lastSpawnTime: 1
+  secondsPerSpawn: 1
