@@ -23,6 +23,7 @@ public class FPSEnemy : MonoBehaviour
             Destroy(gameObject);
             Destroy(other.gameObject);
             FPSPlayer.instance.HandleEnemyDefeat();
+            Debug.Log("Enemy hit!");
         }
     }
 
