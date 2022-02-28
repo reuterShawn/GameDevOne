@@ -6,7 +6,7 @@ public class FPSEnemy : MonoBehaviour
 {
     [SerializeField] private Transform mainTransform;
     [SerializeField] private Transform spawnLocation;
-    [SerializeField] private Transform enemies;
+    [SerializeField] private GameObject[] enemies;
     [SerializeField] private float moveSpeed;
     [SerializeField] private float moveTime;
     [SerializeField] private float lastSpawnTime;
