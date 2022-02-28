@@ -343,10 +343,10 @@ MonoBehaviour:
   shootPosition: {fileID: 1226861075}
   head: {fileID: 1180528946}
   bullets:
-  - {fileID: 672169064348179963, guid: 9ce5d1591259bc84881587043bfb7e67, type: 3}
-  - {fileID: 2564940392073566107, guid: 136f104c38ec18c48b5896962369fbe8, type: 3}
-  - {fileID: 401689589616789770, guid: 91bf1b83627e03a4fb23eca4a252b3cf, type: 3}
-  - {fileID: 3184420002410800659, guid: 4c1986b51d6ea80418964be03fc65680, type: 3}
+  - {fileID: 672169064348179963, guid: dd41443c50be4df0da2f16cd88478dfc, type: 3}
+  - {fileID: 2564940392073566107, guid: 46cac0cbbafc451db9f56344a35c8bf5, type: 3}
+  - {fileID: 401689589616789770, guid: 25379dc2f093df487a548d750a708ab5, type: 3}
+  - {fileID: 3184420002410800659, guid: 2d3f831bb03e44becae159b7ed7c495b, type: 3}
   shootSound: {fileID: 1511442709}
   fpsUI: {fileID: 1280593324}
   maxHealth: 100
