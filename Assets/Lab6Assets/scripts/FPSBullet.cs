@@ -15,7 +15,7 @@ public class FPSBullet : MonoBehaviour
         IEnumerator FireRoutine()
         {
             float elapsedTime = 0;
-            while (elapsedTime <= moveSpeed)
+            while (elapsedTime <= 0.05 * moveSpeed)
             {
                 mainTransform.position += mainTransform.forward * moveSpeed * Time.deltaTime;
                 elapsedTime += Time.deltaTime;

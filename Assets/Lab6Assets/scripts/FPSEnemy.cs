@@ -20,6 +20,16 @@ public class FPSEnemy : MonoBehaviour
     {
         Vector3 playerPos = FPSPlayer.instance.transform.position;
         mainTransform.LookAt(playerPos);
+    }
+  
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.CompareTag("Bullet")) {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+            FPSPlayer.instance.HandleEnemyDefeat();
+            Debug.Log("Enemy hit!");
+        }
+    }
 
         Vector3 currentRotation = mainTransform.rotation.eulerAngles;
         currentRotation.x = 0;
