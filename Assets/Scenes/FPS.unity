@@ -378,8 +378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 1739387766}
   enemies:
-  - {fileID: 4608478165724612467, guid: 52d2e0688d38051fea4d8670ca0506e9, type: 3}
-  - {fileID: 4608478165724612467, guid: 52d2e0688d38051fea4d8670ca0506e9, type: 3}
+  - {fileID: 2644024968900818711, guid: 2b9804aa96070f428903a4397035d03e, type: 3}
   lastSpawnTime: 1
   secondsPerSpawn: 1
 --- !u!4 &480132405 stripped
