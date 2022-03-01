@@ -379,8 +379,8 @@ MonoBehaviour:
   spawnLocation: {fileID: 1739387766}
   enemies:
   - {fileID: 2644024968900818711, guid: 2b9804aa96070f428903a4397035d03e, type: 3}
-  lastSpawnTime: 1
-  secondsPerSpawn: 1
+  lastSpawnTime: 4
+  secondsPerSpawn: 0.01
 --- !u!4 &480132405 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
@@ -1032,7 +1032,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: bc862c4c7d36c724da7095bea1b19f5e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
