@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -378,8 +378,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 1739387766}
   enemies:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4608478165724612467, guid: 52d2e0688d38051fea4d8670ca0506e9, type: 3}
+  - {fileID: 4608478165724612467, guid: 52d2e0688d38051fea4d8670ca0506e9, type: 3}
   lastSpawnTime: 1
   secondsPerSpawn: 1
 --- !u!4 &480132405 stripped
