@@ -16,8 +16,9 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private GameObject mainScreen;
     
     // Start is called before the first frame update
-    void Start()
-    {
+    private void Awake() {
+    
+        Cursor.lockState = CursorLockMode.None;
         creditsUI.SetActive(false);
         
         startButton.onClick.AddListener(() => LoadingScreen.LoadScene("GameScene1"));
