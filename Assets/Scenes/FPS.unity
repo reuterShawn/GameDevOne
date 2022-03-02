@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -380,6 +380,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b75589214c4cfd45b9fbe100677063d, type: 3}
+--- !u!1 &341163169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6197676394842608871, guid: 4b75589214c4cfd45b9fbe100677063d, type: 3}
+  m_PrefabInstance: {fileID: 341163168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &341163170
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341163169}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &480132400 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
@@ -517,7 +536,7 @@ Transform:
   m_GameObject: {fileID: 513195466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -579,6 +598,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b75589214c4cfd45b9fbe100677063d, type: 3}
+--- !u!1 &703386153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6197676394842608871, guid: 4b75589214c4cfd45b9fbe100677063d, type: 3}
+  m_PrefabInstance: {fileID: 703386152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &703386154
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703386153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &752883753
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,6 +801,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b75589214c4cfd45b9fbe100677063d, type: 3}
+--- !u!1 &846238494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6197676394842608871, guid: 4b75589214c4cfd45b9fbe100677063d, type: 3}
+  m_PrefabInstance: {fileID: 846238493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &846238495
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846238494}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1020556114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1333,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b75589214c4cfd45b9fbe100677063d, type: 3}
+--- !u!1 &1314346897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6197676394842608871, guid: 4b75589214c4cfd45b9fbe100677063d, type: 3}
+  m_PrefabInstance: {fileID: 1314346896}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1314346898
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314346897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1511442705
 GameObject:
   m_ObjectHideFlags: 0
