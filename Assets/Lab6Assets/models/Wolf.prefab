@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5327499031533783667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.013, y: 0.013, z: 0.013}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,7 +83,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5327499031533783667}
-  m_Material: {fileID: 13400000, guid: 101450c15dc7bf726ba207a1e0e9d749, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
@@ -127,4 +127,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainTransform: {fileID: 5899600148835248794}
-  moveSpeed: 1
+  moveSpeed: 2.4
